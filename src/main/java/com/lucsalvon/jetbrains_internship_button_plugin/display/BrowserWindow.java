@@ -8,9 +8,17 @@ import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
 
+/**
+ * Represents a window displaying the internal web browser
+ */
 public class BrowserWindow extends DialogWrapper {
-    JBCefBrowser jbCefBrowser;
+    JBCefBrowser jbCefBrowser; // Instance of the internal web browser
 
+    /**
+     * Creates a new browser window
+     * @param currentProject the current project
+     * @param url the url of the website to be displayed by the web browser
+     */
     public BrowserWindow(Project currentProject, String url) {
         super(currentProject, true);
 
@@ -30,6 +38,9 @@ public class BrowserWindow extends DialogWrapper {
         return jbCefBrowser.getComponent();
     }
 
+    /**
+     * Disposes of the browser instance
+     */
     protected void disposeBrowser() {
         jbCefBrowser.dispose();
     }

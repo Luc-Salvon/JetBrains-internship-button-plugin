@@ -4,7 +4,16 @@ import com.intellij.openapi.project.Project;
 
 import javax.swing.*;
 
+/**
+ * Represents a button which, when clicked, opens a link on an internal web browser window
+ */
 public class LinkButton extends JButton {
+    /**
+     * Creates an instance of a link button
+     * @param currentProject the current project
+     * @param label the text to be displayed on the button
+     * @param url the url of the website the button will link to
+     */
     public LinkButton(Project currentProject, String label, String url) {
         // Crates a labelled button
         super(label);
