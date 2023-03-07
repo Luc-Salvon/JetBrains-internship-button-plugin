@@ -27,8 +27,8 @@
 
     </extensions>
     <actions>
-        <action id="com.lucsalvon.jetbrains_internship_button_plugin.ModalWindowButtonAction"
-                class="com.lucsalvon.jetbrains_internship_button_plugin.ModalWindowButtonAction" text="Internship Task Button"
+        <action id="com.lucsalvon.jetbrains_internship_button_plugin.actions.ModalWindowButtonAction"
+                class="com.lucsalvon.jetbrains_internship_button_plugin.actions.ModalWindowButtonAction" text="Internship Task Button"
                 description="Button created for the internship task">
             <add-to-group group-id="Internal.UI.Demos" anchor="first"/>
         </action>
