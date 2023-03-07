@@ -1,0 +1,1 @@
+rootProject.name = "jetbrains_internship_button_plugin"
